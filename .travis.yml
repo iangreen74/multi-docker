@@ -23,7 +23,3 @@ after_success:
   - docker push iangreen74/multi-nginx
   - docker push iangreen74/multi-server
   - docker push iangreen74/multi-worker
-
-
-
-

@@ -17,7 +17,7 @@ after_success:
   - docker build -t iangreen74/multi-worker ./worker
 
 #log in to the docker cli
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 # take those images and log into the docker hub
 

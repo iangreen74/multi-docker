@@ -1,9 +1,11 @@
+language: generic 
+
 sudo: required
 services:
   - docker
 
 before_install:
-  - docker build -t iangreen74/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t iangreen74/multi-docker -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true USERNAME/multi-docker npm test
